@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị 20 số nguyên tố đầu tiên</title>
+</head>
+<body>
+
+    <script>
+       let n = 1;
+       let i = 2;
+       let flag;
+       let count = 0;
+       while (count <= 30) {
+           while (i < n) {
+               if (n % i == 0) {
+                 flag = false;
+                 break;
+               } else {
+                 flag = true;
+               }
+               i++;
+           }
+           if (flag == true || n == 1 || n == 2 || n == 3) {
+             document.write(n + "</br>");
+             count++;
+           }
+           n++;
+           i = 2;
+       }
+
+
+
+    </script>
+
+
+</body>
+</html>

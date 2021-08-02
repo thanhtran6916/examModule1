@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img class="imgChange" src="chicago.jpg" alt="">
+    </div>
+    <div>
+        <img class="imgChange" src="la.jpg" alt="">
+    </div>
+    <div>
+        <img class="imgChange" src="ny.jpg" alt="">
+    </div>
+
+
+    <script>
+        let b = 0;
+        function changerImg() {
+            let a;
+            let img = document.getElementsByClassName("imgChange");
+
+            for (a = 0; a < img.length; a++) {
+                img[a].style.display = "none";
+            }
+
+            if (b >= img.length) {
+                b = 0;
+            }
+            img[b].style.display = "block";
+            b++;
+            console.log(b)
+
+            setTimeout(changerImg, 4000);
+        }
+        changerImg();
+    </script>
+</body>
+</html>

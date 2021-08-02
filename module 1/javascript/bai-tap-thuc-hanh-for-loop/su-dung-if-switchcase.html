@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chọn size quần áo</title>
+    <form action="">
+        <input type="text" id="input-size">
+        <button type="button" onclick="choose()">Chọn size</button>
+        <p>
+            Size áo của bạn là:
+            <span id="size"></span>
+        </p>
+    </form>
+
+    <script>
+
+        function result(input) {
+            switch (input) {
+                case "s":
+                    document.getElementById("size").innerHTML = "Size nhỏ!"
+                    break;
+                case "m":
+                    document.getElementById("size").innerHTML = "Size trung bình!"
+                    break;
+                case "l":
+                    document.getElementById("size").innerHTML = "Size lớn!"
+                    break;
+                case "xl":
+                    document.getElementById("size").innerHTML = "Size rất lớn!"
+                    break;
+                default:
+                    document.getElementById("size").innerHTML = "Không có size đó!"
+            }
+        }
+        function choose() {
+            let inputSize = document.getElementById("input-size").value;
+            result(inputSize);
+        }
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

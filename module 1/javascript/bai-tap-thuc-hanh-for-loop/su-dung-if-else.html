@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng điểm học sinh</title>
+</head>
+<body>
+  <form action="">
+    <input type="text" id="input-size">
+    <button type="button" onclick="choose()">Chọn size</button>
+    <p>
+      Xếp hạng học sinh là:
+      <span id="diem"></span>
+    </p>
+  </form>
+
+  <script>
+    function choose() {
+      let input = document.getElementById("input-size").value;
+      if (input >= 7) {
+        document.getElementById("diem").innerHTML = "Học sinh Tốt!"
+      } else if (input >= 5) {
+        document.getElementById("diem").innerHTML = "Học sinh Đạt!"
+      } else {
+        document.getElementById("diem").innerHTML = "Học sinh Không đạt!"
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
