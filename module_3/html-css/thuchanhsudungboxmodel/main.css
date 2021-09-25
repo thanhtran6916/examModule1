@@ -1,0 +1,21 @@
+.box_model{
+    border: solid 8px;
+    border-color: greenyellow aqua blue darkmagenta;
+}
+
+p{
+    border: red 2px dashed;
+    padding: 10px;
+}
+
+#p1 {
+    margin: 20px 10px;
+}
+
+#p2 {
+    margin: 0 10px 20px;
+}
+
+#p3 {
+    margin: 30px 10px 50px;
+}

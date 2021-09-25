@@ -1,0 +1,47 @@
+body {
+    font-family: Arial;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+.sub_nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 300px;
+}
+
+.menu > ul > li {
+    position: relative;
+}
+
+.menu li > a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: red;
+}
+
+.menu > ul > li {
+    width: 150px;
+}
+
+.menu > ul > li:hover .sub_nav {
+    display: block;
+}
+

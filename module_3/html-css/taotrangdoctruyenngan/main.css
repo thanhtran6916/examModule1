@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    font-family: Tahoma;
+}
+
+.header {
+    height: 8em;
+}
+
+.header h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.body {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.sidebar ul {
+    padding: 0 20px;
+    border: 1px solid #ccc;
+}
+
+.sidebar ul li {
+    list-style:  none;
+    font-size: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+    line-height: 30px;
+}
+
+li img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.content {
+    width: 75%;
+    margin: 0 12px;
+}
+
+div .paragraph {
+    margin: 20px 10px;
+    text-indent: 16px;
+    text-align: justify;
+    line-height: 36px;
+}

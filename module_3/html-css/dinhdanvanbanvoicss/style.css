@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    font-family: Tahoma;
+}
+
+div h1{
+    font-family: "Times New Roman";
+    font-weight: 800;
+    margin: 10px;
+}
+
+div .paragraph {
+    margin: 20px 10px;
+    text-indent: 16px;
+    text-align: justify;
+}
+
+.text-blue {
+    color: blue;
+}
